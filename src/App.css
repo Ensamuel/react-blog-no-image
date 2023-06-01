@@ -1,0 +1,145 @@
+
+.Blog__App{
+    background-image: url('/blog\ background.jpg');
+    color: white;
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: -8px -8px ;
+}
+
+
+
+/** Navbar*/
+
+.nav__ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav__ul li{
+    margin: 0px 5px;
+}
+
+.nav__ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/** Home Page*/
+
+.create__post__home{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.create__post__home:hover{
+    cursor: pointer;
+}
+
+.personal__blog{
+    text-align: center;
+    font-style: italic;
+}
+
+.blog__body{
+   display: grid;
+   place-items: center;
+}
+
+.blog__image{
+    height: 300px;
+    width: 300px;
+}
+
+.delete__post{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/** Create Post*/
+
+.input__title{
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+}
+
+.input__description{
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+}
+
+.image__upload{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create__post{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/** About Page*/
+
+.about__page{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
