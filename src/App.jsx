@@ -37,21 +37,24 @@ const App = (props) => {
 
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageUrl, setImageUrl] = useState('');
-
-  const handleImageUpload = (event) => {
+{/**  const handleImageUpload = (event) => {
     const file = event.target.files[0];
     setSelectedImage(file);
 
+   
     const url = URL.createObjectURL(file);
     setImageUrl(url);
-  };
+
+    
+  }; */}
+
   
   return (
     <div className="Blog__App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home fillPosts={fillPosts} imageUrl={imageUrl} DeleteRow={DeleteRow} />} />
-        <Route path="/createpost" element={<CreatePost posts={posts} setPosts={setPosts} AddPosts={AddPosts} createPosts={createPosts} handleImageUpload={handleImageUpload} />} />
+        <Route path="/" element={<Home fillPosts={fillPosts}  DeleteRow={DeleteRow} />} />
+        <Route path="/createpost" element={<CreatePost posts={posts} setPosts={setPosts} AddPosts={AddPosts} createPosts={createPosts}  />} />
         <Route path="/about" element={<About/>}/>
       </Routes>
     </div>
